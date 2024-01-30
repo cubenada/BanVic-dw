@@ -1,0 +1,59 @@
+version: 2
+sources:
+  - name: lgs_source
+    schema: lgs_source
+    description: BanVic data source.
+    tables:
+      - name: agencias
+        description: a
+        columns:
+          - name: cod_agencia
+            tests:
+              - unique
+              - not_null
+      - name: clientes
+        description: a
+        columns:
+          - name: cod_cliente
+            tests:
+              - unique
+              - not_null
+      - name: colaborador_agencia
+        description: a
+        columns:
+          - name: cod_colaborador
+            tests:
+              - unique
+              - not_null
+      - name: colaboradores
+        description: a
+        columns:
+          - name: cod_colaborador
+            tests:
+              - unique
+              - not_null
+      - name: contas
+        description: a
+        columns:
+          - name: num_conta
+            tests:
+              - unique
+              - not_null
+      - name: propostas_credito
+        description: a
+        columns:
+          - name: cod_proposta
+            tests:
+              - unique
+              - not_null
+      - name: transacoes
+        description: a
+        columns:
+          - name: cod_transacao
+            tests:
+              - unique
+              - not_null
+
+
+
+
