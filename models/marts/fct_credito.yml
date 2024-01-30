@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: fct_credito
+    description: ok
+    columns: 
+      - name: proposta_id
+        description: c
+        tests:
+          - unique
+          - not_null
+      - name: cliente_id
+        description: c
+      - name: colaborador_id
+        description: C
+      - name: data_proposta
+        description: c
+      - name: juros_mensal
+        description: c
+      - name: valor_proposta
+        description: c
+      - name: valor_financiamento
+        description: c
+      - name: valor_entrada
+        description: c
+      - name: valor_prestacao
+        description: l
+      - name: qntd_parcelas
+        description: l
+      - name: carencia
+        description: k
+      - name: status
+        description: kl
+      - name: total_pago
+        description: mfg
+      - name: lucro
+        description: mfg

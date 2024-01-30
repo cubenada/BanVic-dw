@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_transacoes
+    description: ok
+    columns: 
+      - name: transacao_id
+        description: c
+        tests:
+          - unique
+          - not_null
+      - name: cliente_id
+        description: c
+      - name: nome_transacao
+        description: C
+      - name: valor_transacao
+        description: c
+      - name: data_transacao
+        description: c
