@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_colaboradores
+    description: ok
+    columns: 
+      - name: colaborador_id
+        description: c
+        tests:
+          - unique
+          - not_null
+      - name: agencia_id
+        description: c
+      - name: nome_colaborador
+        description: C
+      - name: nome_agencia
+        description: c
+      - name: cidade_agencia
+        description: c
+      - name: estado_agencia
+        description: c
+      - name: tipo_agencia
+        description: c

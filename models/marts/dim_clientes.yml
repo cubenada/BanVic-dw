@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: ok
+    columns: 
+      - name: cliente_id
+        description: c
+        tests:
+          - unique
+          - not_null
+      - name: agencia_id
+        description: c
+      - name: nome_cliente
+        description: C
+      - name: tipo_conta
+        description: c
+      - name: data_abertura
+        description: c
+      - name: saldo_total
+        description: c
+      - name: saldo_disponivel
+        description: c
+      - name: ultimo_lancamento
+        description: c
