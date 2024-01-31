@@ -17,7 +17,7 @@ with
             , propostas.qntd_parcelas
             , propostas.carencia
             , propostas.status
-            , (propostas.valor_prestacao * propostas.qntd_parcelas) as total_pago
+            , ((propostas.valor_prestacao * propostas.qntd_parcelas) + propostas.valor_entrada)  as total_pago
             , ((valor_prestacao * qntd_parcelas) - valor_proposta) as lucro
         from propostas
     )
