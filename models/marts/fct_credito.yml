@@ -2,36 +2,36 @@ version: 2
 
 models:
   - name: fct_credito
-    description: ok
+    description: Tabela de fatos com informações e valores de propostas de crédito.
     columns: 
       - name: proposta_id
-        description: c
+        description: ID único e primary key da tabela de propostas.
         tests:
           - unique
           - not_null
       - name: cliente_id
-        description: c
+        description: ID do cliente.
       - name: colaborador_id
-        description: C
+        description: ID do colaborador.
       - name: data_proposta
-        description: c
+        description: Data que a proposta foi iniciada.
       - name: juros_mensal
-        description: c
+        description: Juros mensal da proposta de crédito.
       - name: valor_proposta
-        description: c
+        description: Valor proposto.
       - name: valor_financiamento
-        description: c
+        description: Valor do financiamento.
       - name: valor_entrada
-        description: c
+        description: Valor de entrada.
       - name: valor_prestacao
-        description: l
+        description: Valor mensal de cada prestação.
       - name: qntd_parcelas
-        description: l
+        description: Quantidade de parcelas.
       - name: carencia
-        description: k
+        description: Tempo de carência.
       - name: status
-        description: kl
+        description: Status da proposta.
       - name: total_pago
-        description: mfg
+        description: Total pago pelo cliente.
       - name: lucro
-        description: mfg
+        description: Lucro total.

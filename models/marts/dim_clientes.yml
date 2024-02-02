@@ -2,24 +2,24 @@ version: 2
 
 models:
   - name: dim_clientes
-    description: ok
+    description: Dimensão com informações sobre os clientes e contas.
     columns: 
       - name: cliente_id
-        description: c
+        description: ID dos clientes. Priamary key.
         tests:
           - unique
           - not_null
       - name: agencia_id
-        description: c
+        description: ID das agencias.
       - name: nome_cliente
-        description: C
+        description: Nome completo dos clientes.
       - name: tipo_conta
-        description: c
+        description: Especifica se a conta é de Pessoa Física ou Pessoa Jurídica.
       - name: data_abertura
-        description: c
+        description: Data de abertura da conta.
       - name: saldo_total
-        description: c
+        description: Saldo total da conta.
       - name: saldo_disponivel
-        description: c
+        description: Saldo disponível para uso na conta.
       - name: ultimo_lancamento
-        description: c
+        description: Ultima movimentação da conta.
