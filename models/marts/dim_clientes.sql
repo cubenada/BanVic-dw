@@ -17,6 +17,7 @@ with
             , contas.saldo_total
             , contas.saldo_disponivel
             , contas.ultimo_lancamento
+            , clientes.idade
         from clientes
         left join contas on clientes.cliente_id = contas.cliente_id
     )

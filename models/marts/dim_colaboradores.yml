@@ -2,22 +2,22 @@ version: 2
 
 models:
   - name: dim_colaboradores
-    description: ok
+    description: Dimensção com informações sobre os colaboradores e agencias da BenVic.
     columns: 
       - name: colaborador_id
-        description: c
+        description: ID único dos colaboradores. Primary key.
         tests:
           - unique
           - not_null
       - name: agencia_id
-        description: c
+        description: ID da agência.
       - name: nome_colaborador
-        description: C
+        description: Nome do colaborador.
       - name: nome_agencia
-        description: c
+        description: Nome da agência.
       - name: cidade_agencia
-        description: c
+        description: Cidade da agência.
       - name: estado_agencia
-        description: c
+        description: Estado da agência.
       - name: tipo_agencia
-        description: c
+        description: Tipo de agência.

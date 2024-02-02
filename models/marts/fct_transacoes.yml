@@ -2,18 +2,18 @@ version: 2
 
 models:
   - name: fct_transacoes
-    description: ok
+    description: Tabela de fatos com informações e dados sobre transações financeiras.
     columns: 
       - name: transacao_id
-        description: c
+        description: ID único e primary key das transações.
         tests:
           - unique
           - not_null
       - name: cliente_id
-        description: c
+        description: ID do cliente.
       - name: nome_transacao
-        description: C
+        description: Nome da transação.
       - name: valor_transacao
-        description: c
+        description: Valor da transação.
       - name: data_transacao
-        description: c
+        description: Data da transação.

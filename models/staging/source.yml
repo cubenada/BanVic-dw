@@ -5,49 +5,49 @@ sources:
     description: BanVic data source.
     tables:
       - name: agencias
-        description: a
+        description: Tabela com infomrações sobre as agências.
         columns:
           - name: cod_agencia
             tests:
               - unique
               - not_null
       - name: clientes
-        description: a
+        description: Tabela com informações sobre os clientes.
         columns:
           - name: cod_cliente
             tests:
               - unique
               - not_null
       - name: colaborador_agencia
-        description: a
+        description: Tabela ponte entre colaboradores e agentes.
         columns:
           - name: cod_colaborador
             tests:
               - unique
               - not_null
       - name: colaboradores
-        description: a
+        description: Tabela com informações sobre colaboradores da empresa.
         columns:
           - name: cod_colaborador
             tests:
               - unique
               - not_null
       - name: contas
-        description: a
+        description: Tabela com informações sobre as contas dos clientes.
         columns:
           - name: num_conta
             tests:
               - unique
               - not_null
       - name: propostas_credito
-        description: a
+        description: Tabelas com informações sobre propostas de crédito.
         columns:
           - name: cod_proposta
             tests:
               - unique
               - not_null
       - name: transacoes
-        description: a
+        description: Tabela com informações sobre as transações.
         columns:
           - name: cod_transacao
             tests:
