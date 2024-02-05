@@ -1,15 +1,30 @@
-Welcome to your new dbt project!
+O BanVic, Banco Vitória S.A., fundado em 2010, é uma instituição financeira. Esse projeto dbt transforma a raw data do ERP da empresa em um modelo de analytics pronto para visualização.
 
-### Using the starter project
+As informações do ERP consistem em tabelas de agências, clientes, colaboradores, contas, propostas de crédito e transações.
 
-Try running the following commands:
-- dbt run
-- dbt test
+Utiliznado o projeto:
 
+Carregar os arquivos de CSVs no data warehouse.
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+$ dbt seed
+
+Carregar os modelos.
+
+$ dbt run
+
+Testar os modelos.
+
+$ dbt test
+
+Gerando a documentação.
+
+$ dbt docs generate
+
+Ver a documentação
+
+$ dbt docs serve
+
+Construção do projeto.
+
+$ dbt build
+
